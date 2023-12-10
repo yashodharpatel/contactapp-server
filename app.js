@@ -4,6 +4,9 @@ import morgan from "morgan";
 import contactRouter from "#routes/contact";
 import indexRouter from "#routes/index";
 import errorHandler from "#middleware/errorHandler";
+import connectDB from "#config/dbConnection";
+
+connectDB();
 
 dotenv.config();
 const app = express();
